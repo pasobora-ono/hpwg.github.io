@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+body {
+	font-family: "メイリオ", "Hiragino Kaku Gothic Pro", Meiryo, "ヒラギノ角ゴ Pro W3", "MS PGothic", "MS UI Gothic", Helvetica, Arial, sans-serif;
+	background-image: url("../images/stripe.png");
+	background-repeat: repeat-x;
+	background-color: #ebe6d3;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/*========header=========*/
+header {
+	margin-top: 3em;
+}
+
+header h1 {
+	font-size: 120%;
+	font-weight: bold;
+	color: #670000;
+	text-align: center;
+}
+
+.banner {
+	position: relative;
+}
+
+.banner:before {
+	content: "";
+	position: absolute;
+	bottom: 7px;
+	left: 20px;
+	width: 50%;
+	box-shadow: 0 0 4px 10px #bdbaae;
+	transform: rotate(-2deg);
+	z-index: -1
+}
+
+.banner:after {
+	content: "";
+	position: absolute;
+	bottom: 7px;
+	right: 20px;
+	width: 50%;
+	box-shadow: 0 0 4px 10px #bdbaae;
+	transform: rotate(2deg);
+	z-index: -1
+}
+
+.banner img {}
+
+/*========nav=========*/
+nav ul {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+nav li {
+	text-align: center;
+	font-size: 24px;
+}
+
+nav li:first-child,
+nav li:last-child {
+	width: 95px;
+	height: 77px;
+}
+
+nav li:first-child {
+	background: linear-gradient(#e6b705, #937503);
+	border-radius: 10px 0 0 10px;
+}
+
+nav li:last-child {
+	background: linear-gradient(#e6b705, #937503);
+	border-radius: 0 10px 10px 0;
+}
+
+nav li:nth-child(2),
+nav li:nth-child(3),
+nav li:nth-child(4),
+nav li:nth-child(5) {
+	width: 192px;
+	background: linear-gradient(#e6b705, #937503);
+	height: 77px;
+	line-height: 77px
+}
+
+nav li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+
+nav li a:hover {
+	background-color: #f7c405;
+}
+
+#contents {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*========main=========*/
+main {
+	flex: 5;
+	margin-right: 5px;
+}
+
+main h2 {
+	font-size: 125%;
+	border-left: 10px solid #d95483;
+	padding-left: 10px;
+}
+
+main img {
+	border: 5px solid #ffff;
+}
+
+/*========aside========*/
+aside {
+	flex: 2;
+	background-color: #fff;
+	margin-left: 5px;
+}
+
+/*========footer========*/
+footer {
+	background-color: #666666;
+	color: #fff;
+	font-size: 80%;
+	text-align: center;
+	padding: 3px;
+	margin-top: 2em;
+}
+
+footer p {
+	margin: 7px;
+	padding: 10px;
+	border: 1px solid #fff;
+}
+
+footer p a {
+	color: #fff;
+}
