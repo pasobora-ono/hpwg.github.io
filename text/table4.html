@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<link rel="stylesheet" href="../style/base.css" type="text/css">
+	<link rel="stylesheet" href="../style/table4.css" type="text/css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<title>表</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<h1>2020年Webサイト作成講習会</h1>
+		</header>
+		<div id="pankuzu">
+			<p><a href="../index.html">top</a> &gt; セルの結合</p>
+		</div>
+		<main>
+			<h1>セルの結合</h1>
+			<div class="type">
+				<div class="item">
+					<table>
+						<tr>
+							<td>セル1-1</td>
+							<td>セル1-2</td>
+							<td>セル1-3</td>
+						</tr>
+						<tr>
+							<td>セル2-1</td>
+							<td>セル2-2</td>
+							<td>セル2-3</td>
+						</tr>
+						<tr>
+							<td>セル3-1</td>
+							<td>セル3-2</td>
+							<td>セル3-3</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table>
+						<tr>
+							<td colspan="2">セル1-1</td>
+							<td>セル1-3</td>
+						</tr>
+						<tr>
+							<td>セル2-1</td>
+							<td>セル2-2</td>
+							<td>セル2-3</td>
+						</tr>
+						<tr>
+							<td>セル3-1</td>
+							<td>セル3-2</td>
+							<td>セル3-3</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table>
+						<tr>
+							<td>セル1-1</td>
+							<td rowspan="3">セル1-2</td>
+							<td>セル1-3</td>
+						</tr>
+						<tr>
+							<td>セル2-1</td>
+							<td>セル2-3</td>
+						</tr>
+						<tr>
+							<td>セル3-1</td>
+							<td>セル3-3</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<p>結合なし</p>
+					<p class="source">
+						&lt;table&gt;<br>
+						&lt;tr&gt;<br>
+							　&lt;td&gt;セル1-1&lt;/td&gt;<br>
+							　&lt;td&gt;セル1-2&lt;/td&gt;<br>
+							　&lt;td&gt;セル1-3&lt;/td&gt;<br>
+						&lt;/tr&gt;<br>
+						&lt;tr&gt;<br>
+							　&lt;td&gt;セル2-1&lt;/td&gt;<br>
+							　&lt;td&gt;セル2-2&lt;/td&gt;<br>
+							　&lt;td&gt;セル2-3&lt;/td&gt;<br>
+						&lt;/tr&gt;<br>
+						&lt;tr&gt;<br>
+							　&lt;td&gt;セル3-1&lt;/td&gt;<br>
+							　&lt;td&gt;セル3-2&lt;/td&gt;<br>
+							　&lt;td&gt;セル3-3&lt;/td&gt;<br>
+						&lt;/tr&gt;<br>
+					&lt;/table&gt;
+					</p>
+				</div>
+				
+				<div class="item">
+					<p>横方向に結合</p>
+					<p class="source">
+						&lt;table&gt;<br>
+						&lt;tr&gt;<br>
+							　&lt;td colspan="2"&gt;セル1-1&lt;/td&gt;<br>
+							　&lt;td&gt;セル1-3&lt;/td&gt;<br>
+						&lt;/tr&gt;<br>
+						&lt;tr&gt;<br>
+							　&lt;td&gt;セル2-1&lt;/td&gt;<br>
+							　&lt;td&gt;セル2-2&lt;/td&gt;<br>
+							　&lt;td&gt;セル2-3&lt;/td&gt;<br>
+						&lt;/tr&gt;<br>
+						&lt;tr&gt;<br>
+							　&lt;td&gt;セル3-1&lt;/td&gt;<br>
+							　&lt;td&gt;セル3-2&lt;/td&gt;<br>
+							　&lt;td&gt;セル3-3&lt;/td&gt;<br>
+						&lt;/tr&gt;<br>
+					&lt;/table&gt;
+					</p>
+				</div>
+				
+				<div class="item">
+					<p>縦方向に結合</p>
+					<p class="source">
+						&lt;table&gt;<br>
+						&lt;tr&gt;<br>
+							　&lt;td&gt;セル1-1&lt;/td&gt;<br>
+							　&lt;td rowspan="3"&gt;セル1-2&lt;/td&gt;<br>
+							　&lt;td&gt;セル1-3&lt;/td&gt;<br>
+						&lt;/tr&gt;<br>
+						&lt;tr&gt;<br>
+							　&lt;td&gt;セル2-1&lt;/td&gt;<br>
+							　&lt;td&gt;セル2-3&lt;/td&gt;<br>
+						&lt;/tr&gt;<br>
+						&lt;tr&gt;<br>
+							　&lt;td&gt;セル3-1&lt;/td&gt;<br>
+							　&lt;td&gt;セル3-3&lt;/td&gt;<br>
+						&lt;/tr&gt;<br>
+					&lt;/table&gt;
+					</p>
+				</div>
+				
+				<div class="item2"><br>
+				<table>
+					<tr>
+						<th>作家</th>
+						<th>作品</th>
+					</tr>
+					<tr>
+						<td rowspan="3">赤川次郎</td>
+						<td>赤いこうもり傘</td>
+					</tr>
+					<tr>
+						<td>探偵物語</td>
+					</tr>
+					<tr>
+						<td>三毛猫ホームズの推理</td>
+					</tr>
+					<tr>
+						<td rowspan="3">星新一</td>
+						<td>エヌ氏の遊園地</td>
+					</tr>
+					<tr>
+						<td>午後の恐竜</td>
+					</tr>
+					<tr>
+						<td>おのぞみの結末</td>
+					</tr>
+				</table>
+				</div>
+				
+				<div class="item2">
+				<p class="source">
+				&lt;table&gt;<br>
+					&lt;tr&gt;<br>
+					　&lt;th&gt;作家&lt;/th&gt;<br>
+					　&lt;th&gt;作品&lt;/th&gt;<br>
+					&lt;/tr&gt;<br>
+					&lt;tr&gt;<br>
+					　&lt;td rowspan="3"&gt;赤川次郎&lt;/td&gt;<br>
+					　&lt;td&gt;赤いこうもり傘&lt;/td&gt;<br>
+					&lt;/tr&gt;<br>
+					&lt;tr&gt;<br>
+					　&lt;td&gt;探偵物語&lt;/td&gt;<br>
+					&lt;/tr&gt;<br>
+					&lt;tr&gt;<br>
+					　&lt;td&gt;三毛猫ホームズの推理&lt;/td&gt;<br>
+					&lt;/tr&gt;<br>
+					&lt;tr&gt;<br>
+					　&lt;td rowspan="3"&gt;星新一&lt;/td&gt;<br>
+					　&lt;td&gt;エヌ氏の遊園地&lt;/td&gt;<br>
+					&lt;/tr&gt;<br>
+					&lt;tr&gt;<br>
+					　&lt;td&gt;午後の恐竜&lt;/td&gt;<br>
+					&lt;/tr&gt;<br>
+					&lt;tr&gt;<br>
+					　&lt;td&gt;おのぞみの結末&lt;/td&gt;<br>
+					&lt;/tr&gt;<br>
+				&lt;/table&gt;<br>
+				</p>
+				</div>				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</main>
+		<footer>Copyright © 2020 Pasobora Network Hodogaya All Rights Reserved.</footer>
+	</div>
+</body></html>
