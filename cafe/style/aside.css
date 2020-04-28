@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+aside h2 {
+	font-size: 125%;
+}
+
+aside ul {
+	margin-left: 1em;
+	margin-right: 0.5em;
+}
+
+aside li {
+	height: 2.5em;
+	line-height: 2.5em;
+}
+aside li a{
+	text-decoration: none;
+	background:
+		linear-gradient(#ccc,#aaa); 
+	display: block;
+	border-radius: 7px 7px 0 0;
+	color: #fff;
+	padding-left: 1em;	
+}
+aside li a:hover{
+	background:
+		linear-gradient(#eee,#ccc); 
+	color: #333;
+
+}
