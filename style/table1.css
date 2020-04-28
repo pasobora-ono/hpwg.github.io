@@ -1,0 +1,27 @@
+@charset "UTF-8";
+.type {
+	display: flex;
+	justify-content:space-between;
+	flex-wrap: wrap
+}
+.item{
+	width: 32%;
+}
+table{
+	margin: 0 auto;
+}
+.samle1,.samle1 tr,.samle1 td,.samle1 th {
+	border: 1px solid #000;
+}
+.samle2,.samle2 tr,.samle2 td,.samle2 th {
+	border: 1px solid #000;
+}
+.samle2{
+	border-collapse: collapse;
+}
+.source {
+	background-color: antiquewhite;
+	padding: 5px;
+}
+.source br {
+}
