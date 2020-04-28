@@ -1,0 +1,13 @@
+@charset "UTF-8";
+section{
+	display: flex;
+	justify-content:center;
+}
+.photo,.info {
+	width: 50%;
+	padding-right: 5px;
+}
+
+.info h3{
+	font-size: 100%;
+}
