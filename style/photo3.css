@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+img {
+	width: 200px;
+}
+
+.sample1 {
+	border: 1px solid #000;
+}
+
+.sample2 {
+	border: 3px dotted #f00;
+}
+
+.sample3 {
+	border: 5px dashed #0f0;
+}
