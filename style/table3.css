@@ -1,0 +1,28 @@
+@charset "UTF-8";
+.type {
+	display: flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.item{
+	width: 49%;
+}
+table{
+/*	margin: 0 auto;*/
+	width: 90%;
+		border-collapse: collapse;
+}
+table, tr, td, th {
+	border: 1px solid #000;
+}
+.samle1 tr th:first-child{
+	width: 50%;
+	height: 50px;
+}
+
+.source {
+	background-color: antiquewhite;
+	padding: 5px;
+}
+.source br {
+}
