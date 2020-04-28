@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.type {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.type ul{
+	width: 20%;
+}
