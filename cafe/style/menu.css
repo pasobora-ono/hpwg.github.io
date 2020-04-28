@@ -1,0 +1,29 @@
+@charset "UTF-8";
+section{
+	display: flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+.menu {
+	width: 33%;
+}
+.photo,.info {
+	width: 50%;
+	padding-right: 5px;
+}
+
+.menu h3{
+	font-size: 16px;
+	margin: 0;
+}
+
+.red {
+	color: red;
+}
+table {
+	width: 90%;
+	margin-bottom: 40px;
+}
+tr td:nth-child(1),tr td:nth-child(3){
+	width: 40%;
+}
