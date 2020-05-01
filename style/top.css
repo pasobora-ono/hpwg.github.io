@@ -41,6 +41,10 @@ li{
 	/*background-color: #d6cba4;*/
 	background:radial-gradient(#fff, #afeeee);
 }
+p{
+	width: 24%;
+}
+
 footer {
     background-color: #666;
     text-align: center;
