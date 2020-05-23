@@ -1,7 +1,70 @@
-h1{ 
-  font-size:20px; 
-  color:#ff0000;
+@charset "UTF-8";
+
+h2 {
+	margin-bottom: 0px;
 }
-p{
-　width:300px;
+
+p.exsample {
+	margin: 0 10px;
+	background-color: antiquewhite;
+	padding: 5px;
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.html,
+.css,
+.result,
+.explain {
+	width: 48%;
+	padding: 5px;
+}
+
+.html {
+	background-color: antiquewhite
+}
+
+.css {
+	background-color: yellow;
+}
+
+.result {
+	background-color: azure
+}
+
+.group h1,
+.group p {
+	color: #4682b4;
+}
+
+.sison ul strong {
+	color: #ff0000;
+}
+
+.kodomo div > strong {
+	color: #ff0000;
+}
+
+.rinsetu h1 + h2 {
+	color: #ff0000;
+}
+
+.kurasu li.odd {
+	color: #dc143c;
+}
+
+.kurasu li.even {
+	color: #4682b4;
+}
+
+.id div#header {
+	border-bottom: 1px solid #c0c0c0;
+}
+
+.id #footer {
+	border-top: 1px solid #c0c0c0;
 }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<link rel="stylesheet" href="../style/base.css" type="text/css">
+	<link rel="stylesheet" href="../style/style.css" type="text/css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<title>CSS</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<h1>2020年Webサイト作成講習会</h1>
+		</header>
+		<div id="pankuzu">
+			<p><a href="../index.html">top</a> &gt; CSS</p>
+		</div>
+		<main>
+			<h1>CSSの基本書式実施例</h1>
+			<!--====クラスセレクタ=======-->
+			<h2>クラスセレクタ</h2>
+			<div class="box">
+				<div class="html">
+					<h3>HTML</h3>
+					<p> &lt;p&gt; カテゴリ一覧&lt;/p&gt;<br>
+						&lt;ul&gt;<br>
+						&lt;li class="odd"&gt;アクション&lt;/li&gt;<br>
+						&lt;li class="even"&gt;ミステリー&lt;/li&gt;<br>
+						&lt;li class="odd"&gt;SF&lt;/li&gt;<br>
+						&lt;li class="even"&gt;ヒューマン&lt;/li&gt;<br>
+						&lt;li class="odd"&gt;ラブストーリー&lt;/li&gt;<br>
+						&lt;li class="even"&gt;ノンフィクション&lt;/li&gt;<br>
+						&lt;/ul&gt;</p>
+				</div>
+				<div class="css">
+					<h3>css</h3>
+					<p> li.odd{<br>
+						　color: #dc143c;<br>
+						}<br>
+
+						li.even{<br>
+						　color: #4682b4;<br>
+						}</p>
+
+				</div>
+				<div class="result kurasu">
+					<p> カテゴリ一覧</p>
+					<ul>
+						<li class="odd">アクション</li>
+						<li class="even">ミステリー</li>
+						<li class="odd">SF</li>
+						<li class="even">ヒューマン</li>
+						<li class="odd">ラブストーリー</li>
+						<li class="even">ノンフィクション</li>
+					</ul>
+				</div>
+				<div class="explain">
+					<p>li要素に対してclass属性の値として交互に「odd」と「even」を割り当てています。そしてスタイルシートではli.oddとli.evenに別々のスタイルを割り当てることで1行毎に違う見た目になるようにしています。 </p>
+				</div>
+
+			</div>
+			<hr>
+			<!--====IDセレクタ=======-->
+			<h2>IDセレクタ</h2>
+			<div class="box">
+				<div class="html">
+					<h3>HTML</h3>
+					<p> &lt;div id="header"&gt;<br>
+						映画の趣味のページ<br>
+						&lt;/div&gt;<br>
+						&lt;p&gt;<br>
+						カテゴリ一覧<br>
+						&lt;/p&gt;<br>
+						&lt;ul&gt;<br>
+						&lt;li&gt;アクション&lt;/li&gt;<br>
+						&lt;li&gt;ミステリー&lt;/li&gt;<br>
+						&lt;li&gt;SF&lt;/li&gt;<br>
+						&lt;li&gt;ヒューマン&lt;/li&gt;<br>
+						&lt;li&gt;ラブストーリー&lt;/li&gt;<br>
+						&lt;li&gt;ノンフィクション&lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+						&lt;div id="footer"&gt;<br>
+						Copyright (C) 2009 映画の友<br>
+						&lt;/div&gt;</p>
+				</div>
+				<div class="css">
+					<h3>css</h3>
+					<p> div#header{<br>
+						　border-bottom: 1px solid #c0c0c0;<br>
+						}<br>
+						<br>
+						#footer{<br>
+						　border-top: 1px solid #c0c0c0;<br>
+						}/p>
+
+				</div>
+				<div class="result id">
+					<h3>結果</h3>
+					<div id="header">
+						映画の趣味のページ
+					</div>
+					<p>
+						カテゴリ一覧
+					</p>
+					<ul>
+						<li>アクション</li>
+						<li>ミステリー</li>
+						<li>SF</li>
+						<li>ヒューマン</li>
+						<li>ラブストーリー</li>
+						<li>ノンフィクション</li>
+					</ul>
+					<div id="footer">
+						Copyright (C) 2009 映画の友
+					</div>
+
+				</div>
+				<div class="explain">
+					<h3>解説</h3>
+					<p>ページ内にヘッダとフッタを表すdiv要素に対してid属性を割り当て、前者には下側に、後者には上側に線を設定しました。</p>
+
+				</div>
+
+			</div>
+
+		</main>
+		<footer>Copyright © 2020 Pasobora Network Hodogaya All Rights Reserved.</footer>
+	</div>
+</body></html>

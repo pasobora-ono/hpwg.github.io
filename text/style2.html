@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<link rel="stylesheet" href="../style/base.css" type="text/css">
+	<link rel="stylesheet" href="../style/style.css" type="text/css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<title>CSS</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<h1>2020年Webサイト作成講習会</h1>
+		</header>
+		<div id="pankuzu">
+			<p><a href="../index.html">top</a> &gt; CSS</p>
+		</div>
+		<main>
+			<h1>CSSの基本書式実施例</h1>
+			<!--====セレクタのグループ化=======-->
+			<h2>セレクタのグループ化</h2>
+			<div class="box">
+				<div class="html">
+					<h3>HTML</h3>
+					<p>&lt;body&gt;<br>
+						&lt;h1&gt;CSSの書式&lt;/h1&gt;<br>
+						&lt;p&gt;
+						CSSで書式を設定するにはセレクタを指定し、プロパティと値をセットにして記述していきます。
+						&lt;/p&gt;<br>
+						&lt;p&gt;
+						セレクタには様々な種類があります。&lt;/p&gt;<br>
+						&lt;/body&gt;</p>
+				</div>
+				<div class="css">
+					<h3>css</h3>
+					<p>h1,p {<br>
+						color: #4682b4;<br>
+						}<br></p>
+
+				</div>
+				<div class="result group">
+					<h1>CSSの書式</h1>
+					<p>
+						CSSで書式を設定するにはセレクタを指定し、プロパティと値をセット
+						にして記述していきます。
+					</p>
+					<p>
+						セレクタには様々な種類があります。
+					</p>
+				</div>
+				<div class="explain">
+					<p>複数のセレクタに対し同じプロパティへ同じ値を設定する場合 セレクタを「,」で区切って続けて記述すると同じグループとして扱うことができます。</p>
+					h1 {<br>
+					color: #4682b4;<br>
+					p {<br>
+					color: #4682b4;<br>
+					と個別に指定する必要は無い
+				</div>
+
+			</div>
+			<hr>
+			<!--====子孫セレクタ=======-->
+			<h2>子孫セレクタ</h2>
+			<div class="box">
+				<div class="html">
+					<h3>HTML</h3>
+					<p>&lt;body&gt;<br>
+						&lt;p&gt;<br>
+						CSSで書式を設定するには&lt;strong&gt;セレクタ&lt;/strong&gt;を指定し、プロパティと値をセットにして記述していきます。
+						&lt;/p&gt;<br>
+						&lt;p&gt;<br>
+						&lt;strong&gt;セレクタ&lt;/strong&gt;には例えば次のようなものがあります。<br>
+						&lt;/p&gt;<br>
+						&lt;ul&gt;<br>
+						&lt;li&gt;要素型&lt;strong&gt;セレクタ&lt;/strong&gt;&lt;/li&gt;<br>
+						&lt;li&gt;子孫&lt;strong&gt;セレクタ&lt;/strong&gt;&lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+						&lt;/body&gt;</p>
+				</div>
+				<div class="css">
+					<h3>css</h3>
+					<p>ul strong{<br>
+						color: #ff0000;<br>
+						}</p>
+
+				</div>
+				<div class="result sison">
+					<h3>結果</h3>
+					<p>
+						CSSで書式を設定するには<strong>セレクタ</strong>を指定し、プロパティと値をセットにして記述していきます。
+					</p>
+					<p>
+						<strong>セレクタ</strong>には例えば次のようなものがあります。
+					</p>
+					<ul>
+						<li>要素型<strong>セレクタ</strong></li>
+						<li>子孫<strong>セレクタ</strong></li>
+					</ul>
+				</div>
+				<div class="explain">
+					<h3>解説</h3>
+					<p>ul要素の孫要素であるstrong要素に対してだけ文字色を赤に設定しました。<br>p要素の中にもstrong要素は使われていますがスタイルは設定されてません。 </p>
+
+				</div>
+
+			</div>
+			<hr>
+			<!--====子供セレクタ=======-->
+			<h2>子供セレクタ</h2>
+			<div class="box">
+				<div class="html">
+					<h3>HTML</h3>
+					<p> &lt;div&gt;<br>
+						CSSで書式を設定するには&lt;strong&gt;セレクタ&lt;/strong&gt;を指定し、プロパ
+						ティと値をセットにして記述していきます。<br>
+						&lt;/div&gt;<br>
+						&lt;div&gt;<br>
+						&lt;p&gt;<br>
+						&lt;strong&gt;セレクタ&lt;/strong&gt;には例えば次のようなものがあります。<br>
+						&lt;/p&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;ul&gt;<br>
+						&lt;li&gt;要素型&lt;strong&gt;セレクタ&lt;/strong&gt;&lt;/li&gt;<br>
+						&lt;li&gt;子孫&lt;strong&gt;セレクタ&lt;/strong&gt;&lt;/li&gt;<br>
+						&lt;/ul&gt;</p>
+				</div>
+				<div class="css">
+					<h3>css</h3>
+					<p>div > strong{<br>
+						　color: #ff0000;<br>
+						}</p>
+
+				</div>
+				<div class="result kodomo">
+					<h3>結果</h3>
+					<div>
+						CSSで書式を設定するには<strong>セレクタ</strong>を指定し、プロパ
+						ティと値をセットにして記述していきます。
+					</div>
+
+					<div>
+						<p>
+							<strong>セレクタ</strong>には例えば次のようなものがあります。
+						</p>
+					</div>
+
+					<ul>
+						<li>要素型<strong>セレクタ</strong></li>
+						<li>子孫<strong>セレクタ</strong></li>
+					</ul>
+				</div>
+				<div class="explain">
+					<h3>解説</h3>
+					<p>div要素の直接の子要素であるstrong要素に対してだけスタイルを設定しました。p要素の中にもstrong要素は使われていますがdiv要素の孫要素となっているためスタイルは設定されていません。 </p>
+
+				</div>
+
+			</div>
+			<hr>
+			<!--====隣接兄弟セレクタ=======-->
+			<h2>隣接兄弟セレクタ</h2>
+			<div class="box">
+				<div class="html">
+					<h3>HTML</h3>
+					<p> &lt;h1&gt;CSSの書式&lt;/h1&gt;<br>
+						&lt;h2&gt;セレクタ&lt;/h2&gt;<br>
+						&lt;p&gt;<br>
+						CSSで書式を設定するにはセレクタを指定し、プロパティと値をセットにして記述していきます。<br>
+						&lt;/p&gt;<br>
+						&lt;h2&gt;プロパティ&lt;/h2&gt;<br>
+						&lt;p&gt;<br>
+						プロパティは例えば文字の色やマージンなど要素が持つ様々な特徴です。<br>
+						&lt;/p&gt;</p>
+				</div>
+				<div class="css">
+					<h3>css</h3>
+					<p>h1 + h2{<br>
+						　color: #ff0000;<br>
+						}</p>
+
+				</div>
+				<div class="result rinsetu">
+					<h3>結果</h3>
+    <h1>CSSの書式</h1>
+    <h2>セレクタ</h2>
+
+    <p>
+    CSSで書式を設定するにはセレクタを指定し、プロパティと値をセットに
+    して記述していきます。
+    </p>
+
+    <h2>プロパティ</h2>
+
+    <p>
+    プロパティは例えば文字の色やマージンなど要素が持つ様々な特徴です。
+    </p>
+					
+				</div>
+				<div class="explain">
+					<h3>解説</h3>
+					<p>h1要素の直後のh1要素に対してだけスタイルを設定しました。2番めのh2要素にスタイルは設定されていません。 </p>
+
+				</div>
+
+			</div>
+			<!--====セレクタのグループ化=======-->
+
+
+
+
+		</main>
+		<footer>Copyright © 2020 Pasobora Network Hodogaya All Rights Reserved.</footer>
+	</div>
+</body></html>
