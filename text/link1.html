@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<link rel="stylesheet" href="../style/base.css" type="text/css">
+	<link rel="stylesheet" href="../style/style.css" type="text/css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<title>リンクの設定</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<h1>2020年Webサイト作成講習会</h1>
+		</header>
+		<div id="pankuzu">
+			<p><a href="../index.html">top</a> &gt; リンクの設定</p>
+		</div>
+		<main>
+			<h1>リンクの設定</h1>
+			<h2>a要素の使い方</h2>
+			<p>他のWebページへのリンクを設定するにはa要素を使います。a要素の書式は次の通りです。
+			</p>
+			<p class="exsample">
+				&lt;a href="リンク先を表すURI"&gt;文字列あるいは画像&lt;/a&gt; </p>
+			<h2>同じ階層のページへリンク</h2>
+			<p>リンクを設定する場合、同じサイト内のページへリンクを張る時には相対パスを使います。同じ階層にあるファイルへのリンクは次のように記述します。</p>
+			<p class="exsample">&lt;a href="ファイル名"&gt;テキスト（あるいは画像）&lt;/a&gt; </p>
+			<h2>下の階層のページへリンク</h2>
+			<p>下の階層のファイルへのリンクは次のように記述します。</p>
+			<p class="exsample">&lt;a href="ディレクトリ名/ファイル名"&gt;テキスト（あるいは画像）&lt;/a&gt; </p>
+			<h2>上の階層のページへリンク</h2>
+			<p>上の階層のファイルへのリンクは次のように記述します。1つ上の階層は「..（ドットドット）」で表します。2つ以上の上の階層も同じように「../../ファイル名」など「..」を階層の分だけ「/」でつなげて記述します。</p>
+			<p class="exsample">&lt;a href="../ファイル名"&gt;テキスト（あるいは画像）&lt;/a&gt; </p>
+			<h2>他サイトへリンク</h2>
+			<p>他のサイトにあるWebページへのリンクは次のように記述します。</p>
+			<p class="exsample">&lt;a href="リンク先WebページのURI"&gt;テキスト（あるいは画像）&lt;/a&gt; </p>
+
+			<h2>画像へのリンク設定</h2>
+			<p>リンクを設定する場合はa要素のコンテンツの部分に記述されたテキストをクリックするとリンク先へ移動しますが、コンテンツにはテキストだけではなく画像を表すimg要素を記述することもできます。<br>
+				img要素に対してリンクを設定する場合は次のように記述します。</p>
+			<p class="exsample">
+				&lt;a href="リンク先を表すURI"&gt;&lt;img src="画像ファイル"&gt;&lt;/a&gt; </p>
+			<h2>文書の中の特定の場所へリンク</h2>
+			<p>リンク先はWebページの文書の中の特定の場所へリンクを設定する事も可能です。特定の場所がページの先頭でなかった場合、リンク先へ移動すると指定した場所が表示されるように自動的にスクロールされます。<br>
+				特定の場所へリンクを設定するには、リンク先となる特定の場所に目印を付けておく必要があります。その為、リンク先のWebページを編集できなければなりませんので必然的に自分で管理しているWebページが対象となります。<br>リンク先の場所へ目印を付けるにはid属性を使います。<br>id属性はa属性に限らず様々な要素で指定することができます。</p>
+			<p class="exsample">
+				&lt;a id="名前"&gt;リンク先&lt;/a&gt; 又は<br>&lt;h2 id="名前"&gt;テキスト&lt;/h2&gt;
+			</p>
+			<p>リンクの記述方法はリンク先のURLの後にシャープ「#」を記述した後で目印に付けた名前を記述します。</p>
+			<p class="exsample">
+				&lt;a href="リンク先を表すURI#名前"&gt;テキスト&lt;/a&gt;
+			</p>
+
+		</main>
+		<footer>Copyright © 2020 Pasobora Network Hodogaya All Rights Reserved.</footer>
+	</div>
+</body></html>
