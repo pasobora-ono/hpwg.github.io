@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.type {
+	display: flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+.item{
+	width: 49%;
+}
+table{
+/*	margin: 0 auto;*/
+/*	width: 90%;*/
+		border-collapse: collapse;
+}
+table, tr, td, th {
+	border: 1px solid #000;
+}
+/*=======列設定=====*/
+
+.sample1 tr th:nth-child(1) {
+	width: 50px;
+}
+
+.sample1 tr th:nth-child(2),
+.sample1 tr th:nth-child(3) ,
+.sample1 tr th:nth-child(4){
+	width: 100px;
+}
+
+
+/*=======列設定２=====*/
+.sample2 tr th:nth-child(1) {
+	width: 50px;
+}
+
+.sample2 tr th:nth-child(2),
+.sample2 tr th:nth-child(3), 
+.sample2 tr th:nth-child(4){
+	width: 100px;
+}
+
+.sample2 tr th:nth-child(2),
+.sample2 tr th:nth-child(4),
+.sample2 tr td:nth-child(2),
+.sample2 tr td:nth-child(4){
+	background-color: #e0ffff;
+}
+.sample2 tr th:nth-child(3),
+.sample2 tr td:nth-child(3) {
+	background-color: #ffebcd;
+}
+
+.source {
+	background-color: antiquewhite;
+	padding: 5px;
+}
+.source br {
+}
