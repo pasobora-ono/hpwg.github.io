@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<link rel="stylesheet" href="../style/base.css" type="text/css">
+	<link rel="stylesheet" href="../style/table5.css" type="text/css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<title>表</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<h1>2020年Webサイト作成講習会</h1>
+		</header>
+		<div id="pankuzu">
+			<p><a href="../index.html">top</a> &gt; 列を指定して修飾</p>
+		</div>
+		<main>
+			<h1>列を指定して修飾</h1>
+			<div class="type">
+				<div class="item">
+					<table class="sample1">
+						<tr>
+							<th>日付</th>
+							<th>10代</th>
+							<th>20代</th>
+							<th>30代</th>
+						</tr>
+
+						<tr>
+							<td>1/1</td>
+							<td>80</td>
+							<td>45</td>
+							<td>32</td>
+						</tr>
+						<tr>
+							<td>1/2</td>
+							<td>72</td>
+							<td>65</td>
+							<td>28</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<table class="sample2">
+						<tr>
+							<th>日付</th>
+							<th>10代</th>
+							<th>20代</th>
+							<th>30代</th>
+						</tr>
+
+						<tr>
+							<td>1/1</td>
+							<td>80</td>
+							<td>45</td>
+							<td>32</td>
+						</tr>
+						<tr>
+							<td>1/2</td>
+							<td>72</td>
+							<td>65</td>
+							<td>28</td>
+						</tr>
+					</table>
+				</div>
+				<div class="item">
+					<p>列の幅、1列目を50pxに、2列目、3列目、4列目を100pxに、を60pxに設定</p>
+					<p class="source">
+						tr th:nth-child(1) {<br>
+						&nbsp;&nbsp;&nbsp;width: 50px;<br>
+						}<br>
+						tr th:nth-child(2),<br>
+						tr th:nth-child(3) ,<br>
+						tr th:nth-child(4)
+						{<br>
+						&nbsp;&nbsp;&nbsp;width: 100px;<br>
+						}<br>
+
+				</div>
+
+				<div class="item">
+					<p>列幅を同左に設定した上で、1列目・4列目と3列目に異なる背景色を設定</p>
+					<p class="source">
+						tr th:nth-child(1) {<br>
+						&nbsp;&nbsp;&nbsp;width: 50px;<br>
+						}<br>
+
+						tr th:nth-child(2),<br>
+						tr th:nth-child(3), <br>tr th:nth-child(4) {<br>
+						&nbsp;&nbsp;&nbsp;width: 100px;<br>
+						}<br>
+						tr th:nth-child(2),<br>
+						tr th:nth-child(4),<br>
+						tr td:nth-child(2), <br>
+						tr td:nth-child(4)
+						{<br>
+&nbsp;&nbsp;&nbsp;background-color: #e0ffff;<br>
+
+						}<br>
+						tr td:nth-child(3),<br>
+						tr td:nth-child(3)
+						  {<br>
+						&nbsp;&nbsp;&nbsp;background-color: #ffebcdf;<br>
+						}<br>
+						
+					</p>
+				</div>
+			</div>
+		</main>
+		<nav>
+			<ul>
+				<li><a href="table1.html">表の枠線</a></li>
+				<li><a href="table2.html">表の幅</a></li>
+				<li><a href="table3.html">セルの幅と高さ</a></li>
+				<li><a href="table4.html">セルの結合</a></li>
+				<li class="currunt"><a href="#">列を指定して修飾</a></li>
+			</ul>
+		</nav>
+		<footer>Copyright © 2020 Pasobora Network Hodogaya All Rights Reserved.</footer>
+	</div>
+</body></html>
