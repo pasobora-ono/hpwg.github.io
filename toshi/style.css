@@ -1,0 +1,147 @@
+@charset "UTF-8";
+boby{
+	margin: 0;
+	padding: 0;
+	font-family: Yu Gothic, sans-serif;
+	font-size: 100%;
+	
+}
+/*ヘッダー*/
+header {
+	background-color: #fc560c;
+	color: #fff;
+}
+h1{
+	margin: 0;
+	text-align: center;
+}
+h1 img{
+	width: 50px;
+	height: 50px;
+	padding-top: 15px;
+}
+/*ナビゲーション*/
+ul{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+li{
+	list-style: none;
+	padding: 1rem;
+}
+li a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 120%;
+}
+
+/*メインビジュアル*/
+#photo {
+	background-image: url(assets/visual.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left;
+	height: 600px;
+	position: relative;
+}
+#photo p{
+	margin: 0;
+	font-weight: 800;
+	position: absolute;
+	bottom: 3rem;
+	right: 2rem;
+	text-align: left;
+	font-size: 400%;
+}
+/*アイコンエリア*/
+#guide {
+	background: #cad7ea;
+}
+#guide h2{
+	text-align: center;
+	font-size: 200%;
+	margin: 0;
+	padding: 3rem 0;
+}
+#guide article{
+	display: flex;
+	justify-content: center;
+}
+#guide figure{
+	text-align: center;
+	font-weight: 700;
+	font-size: 150%;
+}
+/*お問合せボタン*/
+#apply {
+	background-image: url(assets/action.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	position: relative;
+}
+#apply button{
+	display: block;
+	padding: 1rem 2rem;
+	background: #fc560c;
+	color: #fff;
+	outline: none;
+	font-family: Yu Bothic, sans-serif;
+	font-size: 150%;
+	font-weight: 800;
+	border: 1px solid #fff;
+	box-shadow:  4px 4px 0 0 #262626;
+	border-radius: 8px;
+	width: 28rem;
+	height: 5rem;
+	max-width: 90vw;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 2rem;
+	margin: auto;
+}
+#apply button:hover{
+	opacity: .8;
+}
+/*フッタ*/
+footer{
+	background: #262626;
+	color: #fff;
+}
+footer div{
+	margin-left: 3rem;
+	padding: 2rem;
+}
+footer h3{
+	margin: 0;
+	font-size: 140%
+}
+footer div p{
+	margin: 0;
+}
+footer a{
+	color: #fff;
+}
+footer > p{
+	text-align: center;
+	margin: 0;
+}
+/*トップへ戻る*/
+body >div{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+/*レスポンシブデザイン*/
+@media screen and (max-width:777px){
+	#guide article{
+		flex-direction: column;
+		align-items: center;
+	}
+	#apply button{
+		height: 7rem;
+	}
+}
