@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<link rel="stylesheet" href="../style/base.css" type="text/css">
+	<link rel="stylesheet" href="../style/inheritance.css" type="text/css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<title>スタイルの継承</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<h1>2020年Webサイト作成講習会</h1>
+		</header>
+		<div id="pankuzu">
+			<p><a href="../index.html">top</a> &gt; スタイルの継承</p>
+		</div>
+		<main>
+			<h1>スタイルの継承</h1>
+			<p>CSSの場合、プロパティに設定された値は親要素から子要素へ、そして子要素から孫要素へと順に継承されていきます。</p>
+			<div class="box">
+				<div class="item">
+					<h2>HTML</h2>
+					<p class="source">&lt;body&gt;<br>
+						&lt;div&gt;<br>
+						&lt;p&gt;<br>
+						本の&lt;em&gt;カテゴリ&lt;/em&gt;<br>
+						&lt;/p&gt;<br>
+
+						&lt;ul&gt;<br>
+						&lt;li&gt;SF&lt;/li&gt;<br>
+						&lt;li&gt;時代小説&lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;/body&gt;</p>
+				</div>
+				<div class="item">
+					<h2>CSS</h2>
+					<p class="source">
+						body {<br>
+						color: #ff0000;<br>
+						}
+					</p>
+				</div>
+				<div class="item">
+					<h2>結果</h2>
+					<div class="result1">
+						<p>
+							本の<em>カテゴリ</em>
+						</p>
+						<ul>
+							<li>SF</li>
+							<li>時代小説</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p>colorプロパティは値の継承が行われるプロパティの為、body要素の子要素であるdiv要素にも継承され、さらにp要素やその子要素のem要素、そしてul要素やその子要素のli要素にも継承されます。結果的にbody要素の子要素や孫要素の文字の色は全て赤となります。 </p>
+			<hr>
+			<div class="box">
+				<div class="item">
+					<h2>HTML</h2>
+					<p class="source">&lt;body&gt;<br>
+						&lt;div&gt;<br>
+						&lt;p&gt;<br>
+						本の&lt;em&gt;カテゴリ&lt;/em&gt;<br>
+						&lt;/p&gt;<br>
+
+						&lt;ul&gt;<br>
+						&lt;li&gt;SF&lt;/li&gt;<br>
+						&lt;li&gt;時代小説&lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;/body&gt;</p>
+				</div>
+				<div class="item">
+					<h2>CSS</h2>
+					<p class="source">
+						body {<br>
+						color: #ff0000;<br>
+						}<br>
+
+						ul,<br>
+						em {<br>
+						color: #000000;<br>
+						}<br>
+					</p>
+
+				</div>
+				<div class="item">
+					<h2>結果</h2>
+					<div class="result2">
+						<p>
+							本の<em>カテゴリ</em>
+						</p>
+						<ul>
+							<li>SF</li>
+							<li>時代小説</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<p>ul要素及びem要素の文字の色を黒に設定しました。ul要素に設定したcolorプロパティは継承されますので、子要素のli要素にも継承されることになります。 </p>
+			<hr>
+			<div class="box">
+				<div class="item">
+					<h2>HTML</h2>
+					<p class="source">&lt;body&gt;<br>
+						&lt;div&gt;<br>
+						&lt;p&gt;<br>
+						本の&lt;em&gt;カテゴリ&lt;/em&gt;<br>
+						&lt;/p&gt;<br>
+
+						&lt;ul&gt;<br>
+						&lt;li&gt;SF&lt;/li&gt;<br>
+						&lt;li&gt;時代小説&lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+						&lt;/div&gt;<br>
+						&lt;/body&gt;</p>
+				</div>
+				<div class="item">
+					<h2>CSS</h2>
+					<p class="source">
+						body {<br>
+						border: 1px dotted #ffa500;<br>
+						}<br>
+					</p>
+
+				</div>
+				<div class="item">
+					<h2>結果</h2>
+					<div class="result3">
+						<div>
+							<p>
+								本の<em>カテゴリ</em>
+							</p>
+							<ul>
+								<li>SF</li>
+								<li>時代小説</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>borderプロパティは値の継承が行われませんので、子要素や孫要素に枠線は引かれません。</p>
+		</main>
+<!--
+		<nav>
+			<ul>
+				<li class="currunt"><a href="#">表の枠線</a></li>
+				<li><a href="table2.html">表の幅</a></li>
+				<li><a href="table3.html">セルの幅と高さ</a></li>
+				<li><a href="table4.html">セルの結合</a></li>
+				<li><a href="table5.html">列を指定して修飾</a></li>
+			</ul>
+		</nav>
+-->
+
+		<footer>Copyright © 2020 Pasobora Network Hodogaya All Rights Reserved.</footer>
+	</div>
+</body></html>

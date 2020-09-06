@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<link rel="stylesheet" href="../style/base.css" type="text/css">
+	<link rel="stylesheet" href="../style/priority.css" type="text/css">
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<title>スタイルの継承</title>
+</head>
+
+<body>
+	<div id="wrap">
+		<header>
+			<h1>2020年Webサイト作成講習会</h1>
+		</header>
+		<div id="pankuzu">
+			<p><a href="../index.html">top</a> &gt; スタイルの継承</p>
+		</div>
+		<main>
+			<h1>スタイルの優先順位</h1>
+			<p>同一のセレクタに異なる指定が設定された場合、適用される優先順位が定められています。</p>
+			<h2>指定する場所</h2>
+			<p>外部CSS、内部CSS、HTML内の順に優先されます。</p>
+			<div class="box">
+				<div class="item">
+					<h3>HTML</h3>
+					<p class="source">&lt;body&gt;<br>
+						&lt;p&gt;<br>
+						今年は第二回の&lt;strong&gt;ワールド・ベースボール・クラシック(WBC)&lt;/strong&gt;
+						が開催されます。監督選考の件で日本でもごたごたとしていましたが第一回 は&lt;em&gt;優勝&lt;/em&gt;でしたので今回もいい結果を出して欲しいものです。<br> &lt;/p&gt;<br>
+						&lt;/body&gt;</p>
+				</div>
+				<div class="item">
+					<h3>外部CSS</h3>
+					<p class="source">
+						strong {<br>
+						color: #ff0000;<br>
+						}
+					</p>
+					<h3>内部CSS</h3>
+					<p class="source">
+						strong {<br>
+						color: #00ff00;<br>
+						}
+					</p>
+				</div>
+				<div class="item">
+					<h3>結果</h3>
+					<div class="result1">
+						<p>
+							今年は第二回の<strong>ワールド・ベースボール・クラシック(WBC)</strong>
+							が開催されます。監督選考の件で日本でもごたごたとしていましたが第一回 は<em>優勝</em>でしたので今回もいい結果を出して欲しいものです。 </p>
+					</div>
+				</div>
+			</div>
+			<p></p>
+			<hr>
+			<h2>指定する順番</h2>
+			<p>後から指定したCSSが優先されます。</p>
+			<div class="box">
+				<div class="item">
+					<h3>HTML</h3>
+					<p class="source">&lt;body&gt;
+						&lt;p&gt;
+						今年は第二回の&lt;strong&gt;ワールド・ベースボール・クラシック(WBC)&lt;/strong&gt;
+						が開催されます。監督選考の件で日本でもごたごたとしていましたが第一回 は&lt;em&gt;優勝&lt;/em&gt;でしたので今回もいい結果を出して欲しいものです。 &lt;/p&gt;
+						&lt;/body&gt;</p>
+				</div>
+				<div class="item">
+					<h3>CSS</h3>
+					<p class="source">
+						strong {<br>
+						color: #ff0000;<br>
+						}<br>
+						strong {<br>
+						color: #00ff00;<br>
+						}<br>
+
+					</p>
+
+				</div>
+				<div class="item">
+					<h3>結果</h3>
+					<div class="result1">
+						<p>
+							今年は第二回の<strong>ワールド・ベースボール・クラシック(WBC)</strong>
+							が開催されます。監督選考の件で日本でもごたごたとしていましたが第一回 は<em>優勝</em>でしたので今回もいい結果を出して欲しいものです。 </p>
+					</div>
+
+				</div>
+			</div>
+			<p></p>
+			<hr>
+			<h2>!important</h2>
+			<div class="box">
+				<div class="item">
+					<h3>HTML</h3>
+					<p class="source">&lt;body&gt;
+						&lt;p&gt;
+						今年は第二回の&lt;strong&gt;ワールド・ベースボール・クラシック(WBC)&lt;/strong&gt;
+						が開催されます。監督選考の件で日本でもごたごたとしていましたが第一回 は&lt;em&gt;優勝&lt;/em&gt;でしたので今回もいい結果を出して欲しいものです。 &lt;/p&gt;
+						&lt;/body&gt;</p>
+				</div>
+				<div class="item">
+					<h3>CSS</h3>
+					<p class="source">
+						strong {<br>
+						color: #f00 !important;<br>
+						}<br>
+						strong {<br>
+						color: #0f0;<br>
+						}<br>
+					</p>
+
+				</div>
+				<div class="item">
+					<h3>結果</h3>
+					<div class="result2">
+						今年は第二回の<strong>ワールド・ベースボール・クラシック(WBC)</strong>
+						が開催されます。監督選考の件で日本でもごたごたとしていましたが第一回 は<em>優勝</em>でしたので今回もいい結果を出して欲しいものです。
+					</div>
+				</div>
+			</div>
+			<p></p>
+			<hr>
+			<h2>セレクタの詳細度</h2>
+			<div class="box">
+				<div class="item">
+					<h3>HTML</h3>
+					<p class="source">&lt;body&gt;
+						&lt;p id="sample"&gt;
+						今年は第二回の&lt;strong&gt;ワールド・ベースボール・クラシック(WBC)&lt;/strong&gt;
+						が開催されます。監督選考の件で日本でもごたごたとしていましたが第一回 は&lt;em&gt;優勝&lt;/em&gt;でしたので今回もいい結果を出して欲しいものです。 &lt;/p&gt;
+						&lt;/body&gt;</p>
+				</div>
+				<div class="item">
+					<h3>CSS</h3>
+					<p class="source">
+						#sample {<br>
+						　color: #0000ff;<br>
+						　background-color: #fffacd;<br>
+						}<br>
+
+						p#sample {<br>
+						　color: #006400;<br>
+						}<br>
+
+						p {<br>
+						　color: #ff0000;<br>
+						　font-style: italic;<br>
+					</p>
+
+				</div>
+				<div class="item">
+					<h3>結果</h3>
+					<div class="result4">
+						<p id="sample">今年は第二回の<strong>ワールド・ベースボール・クラシック(WBC)</strong>
+						が開催されます。監督選考の件で日本でもごたごたとしていましたが第一回 は<em>優勝</em>でしたので今回もいい結果を出して欲しいものです。</p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!--
+		<nav>
+			<ul>
+				<li class="currunt"><a href="#">表の枠線</a></li>
+				<li><a href="table2.html">表の幅</a></li>
+				<li><a href="table3.html">セルの幅と高さ</a></li>
+				<li><a href="table4.html">セルの結合</a></li>
+				<li><a href="table5.html">列を指定して修飾</a></li>
+			</ul>
+		</nav>
+-->
+
+		<footer>Copyright © 2020 Pasobora Network Hodogaya All Rights Reserved.</footer>
+	</div>
+</body></html>
