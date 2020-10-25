@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+table{
+	width: 90%;
+	border: 1px solid #000;
+}
+table.single {
+	border-collapse: collapse;
+}
+tr,th,td{
+	border: 1px solid #000;	
+}
+th{
+	background-color: aqua;
+}
+td{
+	width: 20%;
+}

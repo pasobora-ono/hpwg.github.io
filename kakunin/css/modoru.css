@@ -1,0 +1,13 @@
+@charset "UTF-8";
+p.moboru {
+  width: 12em;
+  text-align: center;
+  margin: 10px auto;
+}
+
+p.moboru a {
+  display: block;
+  background-color: brown;
+  color: white;
+  text-decoration: none;
+}

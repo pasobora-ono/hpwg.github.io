@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+.title {
+	font-size: 120%;
+	border-left: 5px solid #00f;
+	border-bottom: 2px solid #00f;
+	padding-left: 5px;
+}
+.title2 {
+	font-size: 120%;
+	padding-left: 5px;
+}
+p.moboru {
+  width: 12em;
+  text-align: center;
+  margin: 10px auto;
+}
+
+p.moboru a {
+  display: block;
+  background-color: brown;
+  color: white;
+  text-decoration: none;
+}

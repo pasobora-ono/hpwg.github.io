@@ -1,0 +1,11 @@
+@charset "UTF-8";
+nav ul{
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	
+}
+nav li{
+	width: 100%;
+	border: 1px solid #000;
+}

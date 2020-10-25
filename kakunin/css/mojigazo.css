@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+#wrapper {
+	width: 700px;
+	margin: 0 auto;
+	padding: 5px;
+}
+.box {
+	width: 100%;
+	display: flex;
+}
+figure {
+	margin: 0;padding: 0;
+}
+
+p.moboru {
+  width: 12em;
+  text-align: center;
+  margin: 10px auto;
+}
+
+p.moboru a {
+  display: block;
+  background-color: brown;
+  color: white;
+  text-decoration: none;
+}

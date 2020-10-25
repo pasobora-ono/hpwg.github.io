@@ -1,0 +1,21 @@
+@charset"UTF-8";
+.back {
+	border: 1px solid #000;
+	width: 11em;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 1.5em;
+	text-indent: 0;
+}
+.back a {
+	padding: 5px 10px;
+	text-decoration: none;
+	display: block;
+	background-color: brown;
+	color: white;
+}
+.back a:hover{
+	text-decoration:underline;
+	background-color:blanchedalmond;
+	color: #333;
+}

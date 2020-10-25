@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+
+  background-color: bisque;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+main img{
+	width:100% 
+}
+main p {
+  padding-left: 2em;
+}
+
+
+p.moboru {
+  width: 12em;
+  text-align: center;
+  margin: 10px auto;
+}
+
+p.moboru a {
+  display: block;
+  background-color: brown;
+  color: white;
+  text-decoration: none;
+}
