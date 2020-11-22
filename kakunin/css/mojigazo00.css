@@ -5,13 +5,13 @@ h1{
 
 .box {
 	display: flex;
-	justify-content: space-around;
+/*	justify-content: space-around;*/
 	margin-bottom: 20px;
 }
 
 figure {
 	margin: 0;padding: 0;
-	width: calc(100% /2 - 10px);
+	width: calc(100% /2 );
 }
 figure img {
 	width: 100%;
@@ -19,9 +19,9 @@ figure img {
 }
 main  p{
 	box-sizing: border-box;
-	width: calc(100% /2 - 10px);
-	border: 1px solid #000;
-	padding: 5px;
+	width: calc(100% /2);
+/*	border: 1px solid #000;*/
+/*	padding: 5px;*/
 	margin: 0;
 }
 /*====指示=====*/
@@ -31,6 +31,12 @@ h2{
 .siji  figure{
 	width: 95%;
 }
+.siji  ol{
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+/*
 .siji p{
 	border: 0;
-}
+	width: 100%;
+}*/

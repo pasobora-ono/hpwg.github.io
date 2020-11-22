@@ -11,6 +11,9 @@ h2 + p{
 	margin-left: 1em;
 	text-indent: 1em;
 }
+p:nth-child(4){
+	margin-bottom: 0;
+}
 figure {
 	margin: 0 0 0 1em;
 	padding: 0;
@@ -28,4 +31,38 @@ figure img {
 	border: 1px solid #000;
 	box-shadow: 0 0 0 5px aqua inset;
 }
-
+/*====指示====*/
+.siji h2{
+	font-size:24px;
+}
+.siji img{
+	border:0;
+	box-shadow:none;
+	padding: 0 0 0 15px;
+	max-width: 524px;
+	width: 100%;
+}
+/*====別法====*/
+.betu h2{
+	font-size:24px;
+}
+.betu figure img {
+	padding: 0;
+	border: 5px solid aqua;
+	outline: 1px solid #000;
+}
+/*====方法====*/
+.method {
+	width: 100%;
+	display: flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+}
+.method p{
+	box-sizing: border-box;
+	padding: 5px;
+	width:calc(100%/2 - 20px);
+}
+.method p:nth-child(2n+1){
+	background-color:lightgrey;
+}

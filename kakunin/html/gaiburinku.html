@@ -23,16 +23,53 @@
 				<p>下記画像よりオリジナルページを表示できます。</p>
 
 				<figure><a href="http://pasoboranet.sakura.ne.jp/index.html" target="_blank"><img src="../img/pasorogo.png" alt="パソボラロゴ"></a></figure>
+				<hr>
+				<div class="siji">
+					<h2>作成指示</h2>
+					<p>画像に枠線を付け、その内側に水色を付ける。</p>
+					<figure><img src="../img/gaiburinku.jpg" alt=""></figure>
+				</div>
+				<div class="betu">
+					<p>画像に枠線を付け、その内側に水色を付ける方法</p>
+					<div class="method">
+						<p>img {<br>
+							　padding: 5px;<br>
+							　border: 1px solid #000;<br>
+							　box-shadow: 0 0 0 5px aqua inset;<br>
+							}</p>
+						<p>画像の外側に黒色の枠線を設定し、内側に水色のbox-shadowをつける</p>	
+						<p>img {<br>
+							　border: 5px solid aqua;<br>
+							　box-shadow: 0 0 0 1px #000;<br>
+							}</p>
+						<p>画像に水色の枠線を設定し、黒色のbox-shadowをつける</p>	
+						<p>img {<br>
+							　border: 5px solid aqua;<br>
+							　outline: 1px solid #000;<br>
+							}</p>
+						<p>画像に水色の枠線を設定し、黒色のoutlineをつける</p>	
+
+					</div>
+
+					<!--
+					<h2>別法</h2>
+					<figure><a href="http://pasoboranet.sakura.ne.jp/index.html" target="_blank"><img src="../img/pasorogo.png" alt="パソボラロゴ"></a></figure>
+					<p>ロゴ画像に水色5pxの枠線を付け、黒色1pxのボックスシャドーを設定した。</p>
+-->
+				</div>
 			</main>
 			<nav>
 				<ul>
 					<li><a href="../top.html">TOPページ</a></li>
 					<li><a href="../html/midashi.html">パソボラの主な活動内容</a></li>
-					<li><a href="../html/mojigazo01.html">画像入り文章</a></li>
+					<li><a href="../html/mojigazo00.html">画像入り文章 枠線無し</a></li>
+					<li><a href="../html/mojigazo01.html">画像入り文章 flex</a></li>
+					<li class="sec"><a href="../html/mojigazo02.html">画像入り文章 float</a></li>
+					<li class="sec"><a href="../html/mojigazo03.html">画像入り文章 list</a></li>
 					<li class="current"><a href="../html/gaiburinku.html">パソボラ設立の経緯</a></li>
 					<li><a href="../html/table.html">講座予定表</a></li>
 					<li><a href="../html/hatsumoude01.html">初詣</a></li>
-										<hr>
+					<hr>
 					<li class="home"><a href="../../index.html">ホームへ戻る</a></li>
 				</ul>
 			</nav>
