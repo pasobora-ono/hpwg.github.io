@@ -28,7 +28,7 @@ hr{
 	padding-left: 3em;
 	text-indent: -2em
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:940px){
 	h1 + p{
 	float: non;
 	box-sizing: border-box;
