@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+div.zukei {
+	font-size: 9px;
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(20em*3 + 2.5em*4);
+	justify-content: space-around;
+	border: 1px solid #f00;
+	margin: 0 auto;
+	padding: 1.25em;
+}
+
+.zukei div {
+	width: 20em;
+	height: 20em;
+	border: 1px solid #000;
+	background-color: chartreuse;
+	box-sizing: border-box;
+	margin: 1.25em auto;
+}
+
+.zukei div > div {
+	width: 15em;
+	height: 15em;
+	background-color: aqua;
+	box-sizing: border-box;
+	margin: 2.5em auto;
+}
+
+.zukei div > div > div {
+	width: 10em;
+	height: 10em;
+	background-color: antiquewhite;
+	box-sizing: border-box;
+	margin: 2.5em auto;
+	position: relative;
+}
+
+.zukei p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
